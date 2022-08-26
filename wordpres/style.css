@@ -1,0 +1,149 @@
+
+  #header{
+     width: 100%;
+     height: 380px;
+     background-color: #dedede;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  #header .container p{
+    font-size: 1.2rem;
+  }
+  #content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    
+  }
+  
+  .accordion {
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+  }
+  .accordion-item {
+    position: relative;
+    background-color: #1c9548;
+    color: #fff;
+  }
+  .accordion-item:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width:0;
+    background: linear-gradient(90deg, #20a367, #f1a12b);
+    top: 60px;
+    left: 0;
+    transition: all linear 0.5s;
+  }
+  .accordion-item[open]:before{
+    width:100%;
+  }
+  .accordion-item[open] summary{
+    padding:12px 32px;
+  }
+  .accordion-item summary{
+    cursor: pointer;
+    position: relative;
+    height: 68px;
+    padding: 12px 24px;
+    transition: all linear 0.5s;
+  }
+  .accordion-item summary::marker{
+    font-size:0;
+  }
+  .marker {
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 24px;
+  }
+  .marker:before, .marker:after {
+    content:"";
+    position: absolute;
+    height: 12px;
+    width: 2px;
+    top: 0;
+    left: 0;
+    text-transform: ;
+    background-color: #fff;
+    transform: rotate(90deg);
+    transition: all linear 0.5s;
+  }
+  .accordion-item:not([open]) .marker:after {
+    transform: rotate(0deg)
+    
+  }
+  
+  
+  .accordion-content{
+     font-size:14px;
+     height:0;
+     background-color: #fff;
+     border: 2px solid #1c9548;
+     color: #000;
+     transition: all linear 0.5s;
+  }
+  .accordion-item[open] .accordion-content {
+    height:auto;
+    transition: all linear 0.5s;
+  
+  }
+  
+  
+  
+  
+  #footer-formulario {
+  
+    background-color: #1c9548;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  
+  .form-floating>.form-control {
+    width: 300px;
+  }
+  
+  .rodape .site_relacionamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  @media only screen and (min-width:640px) and (max-width:1000px) {
+  
+  }
+  
+  
+  
+  @media only screen and (min-width:320px) and (max-width:640px) {
+    #content{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content:space-evenly;
+      
+    }
+  }
+  
+  @media only screen and (min-width:50px) and (max-width:320px) {
+    #content{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content:space-evenly;
+      
+    }
+  }

@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://lp-immersion-day.s3.amazonaws.com/css/main.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Darede - Cat&aacute;logo de Servi&ccedil;os CMaaS</title>
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <header id="header" role="heading">
+        <div class="container">
+            <p>O CMaaS possui um completo catálogo de serviços que buscam promover um ambiente em cloud completamente produtivo, econômico e seguro. Confira abaixo quais serviços o programa irá cobrir:</p>
+        </div>
+    </header>
+    <article>
+        <section id="content-service-cmaas" class="container">
+            <div>
+                <strong>Servi&ccedil;os Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon EC2 <span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Cria&ccedil;&atilde;o de nova inst&acirc;ncia Standalone com configura&ccedil;&otilde;es padr&atilde;o/AMI;</li>
+                            <li>Cria&ccedil;&atilde;o de AMI em hor&aacute;rio estipulados previamente acordado;</li>
+                            <li>Adquirir reserva de inst&acirc;ncias Amazon EC2 ou Spot;</li>
+                            <li>Alterar associa&ccedil;&atilde;o de Security Group em inst&acirc;ncias em execu&ccedil;&atilde;o; </li>
+                            <li>Alteração de Tags em instâncias EC2 ou Spot;</li>
+                            <li>Alteração de tamanho e tipo de instância com janela programada;</li>
+                            <li>Associação de IAM Role em instâncias EC2;</li>
+                            <li>Alteração de volumes EBS com manutenção programada;</li>
+                            <li>Criação de Elastic IP e associação a EC2;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon EC2 Auto Scaling<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou modificação de Auto Scaling Group;</li>
+                            <li>Criação de Lauch Template ou Launch Configuration baseado em AMI;</li>
+                            <li>Criação de novas versions;</li>
+                            <li>Alteração de Desired Capacity;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Elastic Container Service (ECS)<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou alteração de cluster ECS baseado em EC2;</li>
+                            <li>Alteração e criação de Tasks Configurations;</li>
+                            <li>Criação ou alteração de Cluster EC2 baseado em instâncias Spot;</li>
+                            <li>Criação ou alteração de repositórios ECR;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Elastic Kubernetes Service (EKS)<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou alteração de Cluster EKS;</li>
+                            <li>Atualização e instalação de plugins e recursos do cluster;</li>
+                            <li>Registrar Clusters EKS;</li>
+                            <li>Alteração de IAM Role;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="content" class="container">
+            <div>
+                <strong>Servi&ccedil;os Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Elastic Beanstalk<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de Stack de Beanstalk usando configurações default;</li>
+                            <li>Criação de Stack via .eb files;</li>
+                            <li>Alteração ou criação de novos Envirements;</li>
+                            <li>Deploy de aplicação via arquivo .zip ou Codepipeline;</li>
+                            <li>Criação de métricas customizadas para monitoramento dos recursos;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Lambda<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de função Lambda a partir de código fornecido pelo cliente;</li>
+                            <li>Associar função Lambda a trigger ou destino existente</li>
+                            <li>Alterar limites de memória e armazenamento de funções</li>
+                            <li>Alteração de Iam Role existente em função Lambda;</li>
+                            <li>Criação de revisions baseado em código fornecido;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Fargate<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de Cluster Network Only para utilização de tasks;</li>
+                            <li>Alteração e criação de Tasks Configurations;</li>
+                            <li>Criação ou alteração de Cluster EC2 baseado em instâncias Spot;</li>
+                            <li>Criação ou alteração de repositórios ECR;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Elastic Block Store (EBS)<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou alteração de unidade de EBS;</li>
+                            <li>Alteração de tamanho ou tipo de unidade de EBS;</li>
+                            <li>Terminate em discos desatacados e sem utilização;</li>
+                            <li>Criação de snapshots em horário programados ou pontuais;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="content" class="container">
+            <div>
+                <strong>Servi&ccedil;os Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Elastic File System (EFS)<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou alteração de unidade de EFS;</li>
+                            <li>Provisionamento de DNS para endpoint de ponto de montagem;</li>
+                            <li>Alteração em tipo de EFS podendo aumentar ou diminuir quantia de mb;</li>
+                            <li>Configuração de backup de armazenamento EFS;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Simple Storage Service (S3)<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de Bucket S3 com configuração padrão;</li>
+                            <li>Alterar configurações de versionamento de Bucket S3;</li>
+                            <li>Configurar ou alterar bucket para acesso público;</li>
+                            <li>Alterar ACL de objeto em Bucket S3;</li>
+                            <li>Alteração de classe de armazenamento para Bucket S3;</li>
+                            <li>Replicação de S3 para contas da mesma Organization;</li>
+                            <li>Alocação de tags;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Aurora<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de Cluster Aurora;</li>
+                            <li>Modificações de informações de cluster, mediante a horário;</li>
+                            <li>Backup de snapshots com horário programado;</li>
+                            <li>Rotatividade de senhas baseado em políticas;</li>
+                            <li>Adição de mais réplicas tanto read como write;</li>
+                            <li>Alteração de tamanho e tipo de RDS;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon DynamoDB<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de tabelas utilizando schemas default provida do cliente;</li>
+                            <li>Criação ou edição de global secundar index para tabelas do DynamoDB;</li>
+                            <li>Alterar limites de read/write capacity para tabelas DynamoDB</li>
+                            <li>Backup de tabelas do DynamoDB, e salvamento em S3;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Servi&ccedil;os Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon DocumentDB<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou edição de DocumentDB default;</li>
+                            <li>Alteração de quantia de nodes previamente combinado com cliente;</li>
+                            <li>Update de version ou engie version;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon ElastiCache<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Alteração ou criação de instâncias de cache (ElastiCache ou Redis);</li>
+                            <li>Adquirir reservas de nodes na utilização do serviço;</li>
+                            <li>Criação de dashboards e monitoramento de recursos;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon RDS<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou alteração de cluster RDS;</li>
+                            <li>Modificações de informações de cluster, mediante a horário agendado;</li>
+                            <li>Backup de snapshots com horário programado;</li>
+                            <li>Rotatividade de senhas baseado em políticas;</li>
+                            <li>Adição de mais réplicas tanto read como write;</li>
+                            <li>Alteração de tamanho e tipo de RDS;</li>
+                            <li>Realização de reservas de instâncias RDS;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon API Gateway<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação ou modificação de API Gateway;</li>
+                            <li>Alteração de domain custom names;</li>
+                            <li>Deploys de novos stages para o API Gateway;</li>
+                            <li>Criação ou edição de API Keys;</li>
+                            <li>Criação ou modificação de VPC Links;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Servi&ccedil;os Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon CloudFront<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e modificação de distribuições CloudFront;</li>
+                            <li>Configuração de novos Behaviours para as distribuições;</li>
+                            <li>Alteração de domain names dentro das distribuições;</li>
+                            <li>Ajustes no Behaviours default;</li>
+                            <li>Automatização de rotina de Invalidation para distribuição;</li>
+                            <li>Integração com Lambda Edge para acréscimo de funcionalidades;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon VPC<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e modificação de Amazon VPCs;</li>
+                            <li>Criação ou edição de subnets e tabela de roteamento;</li>
+                            <li>Criação ou alteração de regras em Network ACL;</li>
+                            <li>Criação ou alteração de regras em Network Security Group;</li>
+                            <li>Configuração de nat-gateway para saída de tráfego interno;</li>
+                            <li>Criar conexão Peering entre duas VPCs existentes;</li>
+                            <li>Criação de novo endpoint para serviço AWS existente;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon Direct Connect<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e configuração de Direct Connect;</li>
+                            <li>Alteração de rotas direcionadas para uso do Direct Connect;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Elastic Load Balancer<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e configuração de Load Balancer;</li>
+                            <li>Migração de tipos de Load Balancer previamento acordado;</li>
+                            <li>Configuração de certicado SSL em Load Balancers;</li>
+                            <li>Configuração e edição de Target Groups;</li>
+                            <li>Criação de Tags em recursos com vínculo ao Load Balancer;</li>
+                            <li>Atachar instâncias em Target Groups;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS VPN<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e modificação de configurações do AWS VPN com informações;</li>
+                            <li>Monitoramento dos peers de conexão;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Route 53<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de novos Domains Names;</li>
+                            <li>Criação e edição de entrada de DNS;</li>
+                            <li>Regra de failover baseado em métricas prontas;</li>
+                            <li>Alias de recursos AWS na criação de regras;</li>
+                            <li>Criação de Health Checks baseado em URL ou IP;</li>
+                            <li>Alteração de TTL para entradas já existentes;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS WAF<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e configuração de WAF tanto regionais como globais;</li>
+                            <li>Criação de regras default ou customizadas;</li>
+                            <li>Associação a distribuições</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon OpenSearch Service<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de OpenSearch em ambiente produtivo ou dev;</li>
+                            <li>Alteração de tamanho computacional e tamanho de disco;</li>
+                            <li>Controle de políticas de acessos via Roles e Policys;</li>
+                            <li>Modificação de version, engine, mediante a interrupção programada;</li>
+                            <li>Execução de backup não programado para OpenSearch;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon CloudWatch<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Monitoramento ativo de recursos da AWS;</li>
+                            <li>Configuração de métricas e threshoolds;</li>
+                            <li>Armazenamento de logs groups e métricas customizadas;</li>
+                            <li>Criação e customização de Dashboards;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>Amazon CloudTrail<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Configuração de armazenamento de logs;</li>
+                            <li>Ajuste no período de retenção;</li>
+                            <li>Configuração do CloudTrail Insights;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Backup<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de Planos de backup usando métricas default;</li>
+                            <li>Criação de Backup Vaults customizados mediante informações passadas;</li>
+                            <li>Modificação de tags para rotinas de backup;</li>
+                            <li>Criação de sincronização de backup entre contas da mesma Organization;</li>
+                            <li>Criação de sincronização de backup entre regiões;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Lifecycle Manager<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de rotina de backup para EC2 baseado em tags;</li>
+                            <li>Ajuste em período de retenção de backups;</li>
+                            <li>Personalização de Scheduled baseado em regra de negócio do cliente;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS SSO<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e configuração de SSO já dentro de alguma Organization;</li>
+                            <li>Criação de grupos e permissões;</li>
+                            <li>Criação e exclusão de usuários;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Organization<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e modificação de Organization baseado em informações do cliente;</li>
+                            <li>Inserção de novas contas;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Billing<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li style="text-decoration: underline;">Informações provisionadas pela ferramenta de FINOPS</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Cost Explorer<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li style="text-decoration: underline;">Informações provisionadas pela ferramenta de FINOPS</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Budgets<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li style="text-decoration: underline;">Informações provisionadas pela ferramenta de FINOPS</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS IAM<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de alteração de usuários, grupos, e políticas;</li>
+                            <li>Alteração de políticas customizadas;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Workspace<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e alteração de Workspaces;</li>
+                            <li>Atualização e criação de Bundles;</li>
+                            <li>Integração com AD conector com configurações previamente informadas;</li>
+                            <li>Criação de usuários e permissões;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS Secret Manager<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Armazenamento de informações em formato de Secret;</li>
+                            <li>Rotatividade de senhas e Secrets;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS EventBridge<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Configuração de eventos com configurações default;</li>
+                            <li>Configuração de eventos com configurações personalizadas;</li>
+                            <li>Habilitar ou desabilitar rules;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS SNS<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Configuração de notificações de SNS;</li>
+                            <li>Integração com outros recursos AWS;</li>
+                            <li>Criação ou edição de tópicos SNS;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS SES<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e modificação de serviços de email;</li>
+                            <li>Registro de domain e email para envio e recebimento; </li>
+                            <li>Integração com AD conector com configurações previamente informadas;</li>
+                            <li>Criação de usuários e permissões;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS SQS<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Configuração e alteração de filas SQS;</li>
+                            <li>Criação de filas FIFO ou Standard;</li>
+                            <li>Inserção de Tags nos recursos de fila;</li>
+                            <li>Controle de politicas previamente definidas;</li>
+                            <li>Trigger com Lambdas;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS CloudFormation<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Execução de staks de criação com informações pre definidas;</li>
+                            <li>Construção de templates.yml mediante informações do cliente;</li>
+                            <li>Construção de staks baseado em outras staks;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS System Manager<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Instalação de atualizações;</li>
+                            <li>Execuções de comandos;</li>
+                            <li>Armazenamento de Parameters Store;</li>
+                            <li>Configuração de demais serviços mediante a informações pré-definidas;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS CodeBuild<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação de buildspec.yml para build de imagem;</li>
+                            <li>Criação e alteração de recursos de CodeBuild;</li>
+                            <li>Evidenciamento de Logs e análise de erros;</li>
+                            <li>Criação de usuários e permissões;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS CodeCommit<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Arquivamento de código;</li>
+                            <li>Criação de branchs e repositórios;</li>
+                            <li>Criação de usuários e permissionamento;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+        <section id="content" class="container">
+            <div>
+                <strong>Serviços Cobertos:</strong>
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary>AWS CodePipeline<span class="marker"></span></summary>
+                        <div class="accordion-content">
+                           <ul>
+                            <li>Criação e alteração de esteira de pipeline;</li>
+                            <li>Criação de steps de aprovação;</li>
+                            <li>Clone de pipelines baseado em outros;</li>
+                            <li>Notificação ao cliente em steps de aprovação do pipeline;</li>
+                           </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+        </section>
+
+    </article>
+
+
+
+
+
+    <footer class="rodape" role="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="logo">
+                        <img src="https://www.darede.com.br/well-architected-public-sector/images/logo-darede.png"
+                            alt="logotipo-footer-darede">
+                    </div>
+                    <p class="" style="text-align: justify">
+                        A Darede, empresa de consultoria especialista em servi&ccedil;os de TI, iniciou suas
+                        opera&ccedil;&otilde;es em 2013.
+                        Trazendo consigo um DNA jovem, descontra&iacute;do e focado em resultados, a Darede busca
+                        agregar valor
+                        e obter os melhores resultados operacionais para nossos clientes. Nossa empresa conta com
+                        colaboradores altamente capacitados que procuram atender nossos clientes de forma personalizada,
+                        estando preparados para atuar em qualquer necessidade do cliente com a mais alta qualidade do
+                        mercado.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-4 endereco">
+                    <h1>Escrit&oacute;rio</h1>
+                    <hr>
+                    Alameda Araguaia, 2044 - Bloco 1, conjunto 210 e 211, alphaville, Barueri - SP, 06455-000
+                    <hr>
+                    (11) 3900-1010
+                    <hr>
+                    contato@darede.com.br
+                </div>
+                <div class="col-12 col-lg-4 acesse">
+                    <h1 style="text-align: center;">Acesse Tamb&eacute;m</h1>
+                    <a href="https://www.darede.com.br/" target="_blank">
+                        <h2 style="text-align: center" class="verde">DAREDE SERVI&Ccedil;OS DE TI</h2>
+                        <p style="text-align: center"><b>Conhe&ccedil;a o nosso portal e fique por dentro das
+                                &uacute;ltimas novidades
+                                da
+                                Darede.</b></p>
+                    </a>
+                    <div class="row site_relacionamento">
+                        <div class="col-2">
+                            <a href="https://www.facebook.com/daredeservicosdeti/" target="_blank"><img
+                                    src="https://lp-hashicorp.s3.amazonaws.com/assets/logotipo-lp-redes-sociais/facebookpng.png"
+                                    width="40px" alt="logotipo-footer-facebook"></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.instagram.com/daredeti/" target="_blank"><img
+                                    src="https://lp-hashicorp.s3.amazonaws.com/assets/logotipo-lp-redes-sociais/instagram.png"
+                                    width="40px" alt="logotipo-footer-instagram"></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.linkedin.com/company/darede/" target="_blank"><img
+                                    src="https://www.darede.com.br/well-architected-public-sector/images/linkedinpng.png"
+                                    width="40px" alt="logotipo--footer-linkedin"></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.youtube.com/c/Daredeti" target="_blank"><img
+                                    src="https://darede.com.br/webinar-cooperativas/youtube.png" width="40px"
+                                    alt="logotipo-footer-youtube"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pt-4 text-center small copyright">
+                    <p class="text-center small">&copy; Copyright 2022 - <a href="https://www.darede.com.br/"><b>Darede
+                                Servi&ccedil;os de
+                                TI</b></a></br>
+                        Todos os direitos reservados | by <a href="https://damidia.com.br/"><b>Damidia Marketing &
+                                Conte&uacute;do</b></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $("#formulario").submit(function (e) {
+            e.preventDefault()
+
+            const receivesEmailLabel = $("#receberComunicados").is(':checked') ? "Sim" : "Não"
+
+
+            // api de VALIDACAO de e-mail
+            var email = $("#email").val();
+            var nome = $("#nome").val();
+
+            if (email == "" || nome == "") {
+                swal("Hummm!", "Para se cadastrar é necessário colocar todos os campos.", "error");
+                return false;
+            } else {
+                if (!validateEmail(email)) {
+                    swal("Hummm!", "O e-mail está invalido.", "error");
+                    return false;
+                }
+            }
+
+
+
+
+            // api de e-mail
+            $.ajax({
+                type: 'POST',
+                url: 'https://5dgf587r45.execute-api.us-east-1.amazonaws.com/prod/send/email',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    plataform: "Landing Page - Convite Happy Hour Cloud Experience",
+                    infos: "Nome: " + $("#nome").val() + " <br/> E-mail: " + $("#email").val() + " <br/> Receber e-mail: " + receivesEmailLabel,
+                    to: "marketing@darede.com.br",
+                    cc: ["carolina.fernandes@darede.com.br, lucas.vieira@darede.com.br"],
+                    cco: [],
+                }),
+                success: function (data1) {
+
+                    // api do dynamodb
+                    $.ajax({
+                        type: 'POST',
+                        url: 'https://dwgiq2ki8h.execute-api.us-east-1.amazonaws.com/prod/create/users',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            name: $("#nome").val(),
+                            phone: null,
+                            email: $("#email").val(),
+                            receives_email: $('#receberComunicados').is(':checked')
+                        }),
+                        success: function (data) {
+                            if (data.error == 1) {
+                                swal("Erro!", data2.mensage, "error");
+                            } else {
+                                swal("Confirmado", "cadastrado com sucesso! :)", "success");
+                            }
+                        },
+                        error: function (xhr, textStatus, error) {
+                            swal("Erro!", "Erro ao enviar o e-mail.", "error");
+                        }
+                    })
+                    return false;
+                },
+                error: function (xhr, textStatus, error) {
+                    swal("Erro!", "Erro ao enviar o e-mail.", "error");
+                }
+
+                
+
+            })
+
+            $.ajax({
+                type: 'POST',
+                url: 'https://5dgf587r45.execute-api.us-east-1.amazonaws.com/prod/send/email/custom',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    "from": "marketing@darede.com.br", //de quem vem marketing@darede.com.br
+
+                    "to": $("#email").val(),// pra quem vai
+
+                    "cc": "", //copia carolina.fernandes@damidia.com.br, luiz.bastos@darede.com.br
+
+                    "bcc": "", //copia oculta
+
+                    "subject": "Confirmação de Inscrito Happy Hour Cloud Experience", //assunto titulo caixa de e-mail,
+
+                    "html": '<table width="599" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="599"><img src="https://lp-darede-cmaas.s3.amazonaws.com/lp-darede-cmaas/assets/header.png" alt="banner-header" name="topo" width="600" height="218" id="topo"/> </td></tr><tr> <td width="500" height="200" align="center"> <p style="padding-left:50px; padding-right:50px;font-family: Arial, Helvetica, sans-serif;"><br>Olá,<br></p><p style="padding-left:50px; padding-right:50px;font-family: Arial, Helvetica, sans-serif;">Sempre acreditamos que &eacute; importante cada vez mais ampliar os conhecimentos sobre cloud! E acompanhado com um bom copo de cerveja &eacute; melhor ainda! <br><br></p><p style="padding-left:50px; padding-right:50px;font-family: Arial, Helvetica, sans-serif;">Voc&ecirc; est&aacute; confirmado para nosso Happy Hour Cloud Experience! Te esperamos l&aacute;! </p><br/><p style="font-family: Arial, Helvetica, sans-serif;">Hard Rock Caf&eacute; </p><p style="font-family: Arial, Helvetica, sans-serif;">Endere&ccedil;o: Rua Edgar Rodrigues, 200 - Santa Cruz </p><p style="font-family: Arial, Helvetica, sans-serif;">Hor&aacute;rio: 18:15 </p><br/> </td></tr><tr> <td> <img src="https://lp-darede-cmaas.s3.amazonaws.com/lp-darede-cmaas/assets/footer.png" alt="banner-footer" name="footer" width="600" height="131" id="footer"/></td></tr></table>'// corpo do email
+                }),
+                
+            });
+            return false;
+        })
+
+        $('#formulario').submit(function () {
+            $(this)[0].reset();
+        });
+
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+    </script>
+
+</body>
+
+</html>
