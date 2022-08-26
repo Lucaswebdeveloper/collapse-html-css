@@ -1,0 +1,908 @@
+<style>
+    #header {
+        width: 100%;
+        height: 380px;
+        background-color: #dedede;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header .container p {
+        font-size: 1.2rem;
+    }
+
+    #content-service-cmaas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .accordion {
+        width: 250px;
+        border-radius: 8px;
+        overflow: hidden;
+
+    }
+
+    .accordion-item {
+        position: relative;
+        background-color: #1c9548;
+        color: #fff;
+    }
+
+    .accordion-item:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        background: linear-gradient(90deg, #20a367, #f1a12b);
+        top: 60px;
+        left: 0;
+        transition: all linear 0.5s;
+    }
+
+    ul {
+        margin: 1em 0 1.5em 2em;
+    }
+
+    .accordion-item[open]:before {
+        width: 100%;
+    }
+
+    .accordion-item[open] summary {
+        padding: 12px 32px;
+    }
+
+    .accordion-item summary {
+        cursor: pointer;
+        position: relative;
+        height: 68px;
+        padding: 12px 24px;
+        transition: all linear 0.5s;
+    }
+
+    .accordion-item summary::marker {
+        font-size: 0;
+    }
+
+    .marker {
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 24px;
+    }
+
+    .marker:before,
+    .marker:after {
+        content: "";
+        position: absolute;
+        height: 12px;
+        width: 2px;
+        top: 0;
+        left: 0;
+        text-transform: ;
+        background-color: #fff;
+        transform: rotate(90deg);
+        transition: all linear 0.5s;
+    }
+
+    .accordion-item:not([open]) .marker:after {
+        transform: rotate(0deg)
+    }
+
+    .accordion-content {
+        font-size: 14px;
+        height: 0;
+        background-color: #fff;
+        border: 2px solid #1c9548;
+        color: #000;
+        transition: all linear 0.5s;
+    }
+
+    .accordion-item[open] .accordion-content {
+        height: auto;
+        transition: all linear 0.5s;
+
+    }
+
+
+
+
+
+
+
+    @media only screen and (min-width:640px) and (max-width:1000px) {}
+
+
+
+    @media only screen and (min-width:320px) and (max-width:640px) {
+        #content-service-cmaas {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+    }
+
+    @media only screen and (min-width:50px) and (max-width:320px) {
+        #content-service-cmaas {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+    }
+</style>
+
+<article>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon EC2 <span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Cria&ccedil;&atilde;o de nova inst&acirc;ncia Standalone com configura&ccedil;&otilde;es
+                                padr&atilde;o/AMI;</li>
+                            <li>Cria&ccedil;&atilde;o de AMI em hor&aacute;rio estipulados previamente acordado;</li>
+                            <li>Adquirir reserva de inst&acirc;ncias Amazon EC2 ou Spot;</li>
+                            <li>Alterar associa&ccedil;&atilde;o de Security Group em inst&acirc;ncias em
+                                execu&ccedil;&atilde;o; </li>
+                            <li>Altera&ccedil;&atilde;o de Tags em inst&acirc;ncias EC2 ou Spot;</li>
+                            <li>Alteração de tamanho e tipo de instância com janela programada;</li>
+                            <li>Associação de IAM Role em instâncias EC2;</li>
+                            <li>Alteração de volumes EBS com manutenção programada;</li>
+                            <li>Criação de Elastic IP e associação a EC2;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon EC2 Auto Scaling<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou modificação de Auto Scaling Group;</li>
+                            <li>Criação de Lauch Template ou Launch Configuration baseado em AMI;</li>
+                            <li>Criação de novas versions;</li>
+                            <li>Alteração de Desired Capacity;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Elastic Container Service (ECS)<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou alteração de cluster ECS baseado em EC2;</li>
+                            <li>Alteração e criação de Tasks Configurations;</li>
+                            <li>Criação ou alteração de Cluster EC2 baseado em instâncias Spot;</li>
+                            <li>Criação ou alteração de repositórios ECR;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Elastic Kubernetes Service (EKS)<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou alteração de Cluster EKS;</li>
+                            <li>Atualização e instalação de plugins e recursos do cluster;</li>
+                            <li>Registrar Clusters EKS;</li>
+                            <li>Alteração de IAM Role;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Elastic Beanstalk<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de Stack de Beanstalk usando configurações default;</li>
+                            <li>Criação de Stack via .eb files;</li>
+                            <li>Alteração ou criação de novos Envirements;</li>
+                            <li>Deploy de aplicação via arquivo .zip ou Codepipeline;</li>
+                            <li>Criação de métricas customizadas para monitoramento dos recursos;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Lambda<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de função Lambda a partir de código fornecido pelo cliente;</li>
+                            <li>Associar função Lambda a trigger ou destino existente</li>
+                            <li>Alterar limites de memória e armazenamento de funções</li>
+                            <li>Alteração de Iam Role existente em função Lambda;</li>
+                            <li>Criação de revisions baseado em código fornecido;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Fargate<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de Cluster Network Only para utilização de tasks;</li>
+                            <li>Alteração e criação de Tasks Configurations;</li>
+                            <li>Criação ou alteração de Cluster EC2 baseado em instâncias Spot;</li>
+                            <li>Criação ou alteração de repositórios ECR;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Elastic Block Store (EBS)<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou alteração de unidade de EBS;</li>
+                            <li>Alteração de tamanho ou tipo de unidade de EBS;</li>
+                            <li>Terminate em discos desatacados e sem utilização;</li>
+                            <li>Criação de snapshots em horário programados ou pontuais;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Elastic File System (EFS)<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou alteração de unidade de EFS;</li>
+                            <li>Provisionamento de DNS para endpoint de ponto de montagem;</li>
+                            <li>Alteração em tipo de EFS podendo aumentar ou diminuir quantia de mb;</li>
+                            <li>Configuração de backup de armazenamento EFS;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Simple Storage Service (S3)<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de Bucket S3 com configuração padrão;</li>
+                            <li>Alterar configurações de versionamento de Bucket S3;</li>
+                            <li>Configurar ou alterar bucket para acesso público;</li>
+                            <li>Alterar ACL de objeto em Bucket S3;</li>
+                            <li>Alteração de classe de armazenamento para Bucket S3;</li>
+                            <li>Replicação de S3 para contas da mesma Organization;</li>
+                            <li>Alocação de tags;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Aurora<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de Cluster Aurora;</li>
+                            <li>Modificações de informações de cluster, mediante a horário;</li>
+                            <li>Backup de snapshots com horário programado;</li>
+                            <li>Rotatividade de senhas baseado em políticas;</li>
+                            <li>Adição de mais réplicas tanto read como write;</li>
+                            <li>Alteração de tamanho e tipo de RDS;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon DynamoDB<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de tabelas utilizando schemas default provida do cliente;</li>
+                            <li>Criação ou edição de global secundar index para tabelas do DynamoDB;</li>
+                            <li>Alterar limites de read/write capacity para tabelas DynamoDB</li>
+                            <li>Backup de tabelas do DynamoDB, e salvamento em S3;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon DocumentDB<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou edição de DocumentDB default;</li>
+                            <li>Alteração de quantia de nodes previamente combinado com cliente;</li>
+                            <li>Update de version ou engie version;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon ElastiCache<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Alteração ou criação de instâncias de cache (ElastiCache ou Redis);</li>
+                            <li>Adquirir reservas de nodes na utilização do serviço;</li>
+                            <li>Criação de dashboards e monitoramento de recursos;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon RDS<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou alteração de cluster RDS;</li>
+                            <li>Modificações de informações de cluster, mediante a horário agendado;</li>
+                            <li>Backup de snapshots com horário programado;</li>
+                            <li>Rotatividade de senhas baseado em políticas;</li>
+                            <li>Adição de mais réplicas tanto read como write;</li>
+                            <li>Alteração de tamanho e tipo de RDS;</li>
+                            <li>Realização de reservas de instâncias RDS;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon API Gateway<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação ou modificação de API Gateway;</li>
+                            <li>Alteração de domain custom names;</li>
+                            <li>Deploys de novos stages para o API Gateway;</li>
+                            <li>Criação ou edição de API Keys;</li>
+                            <li>Criação ou modificação de VPC Links;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon CloudFront<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e modificação de distribuições CloudFront;</li>
+                            <li>Configuração de novos Behaviours para as distribuições;</li>
+                            <li>Alteração de domain names dentro das distribuições;</li>
+                            <li>Ajustes no Behaviours default;</li>
+                            <li>Automatização de rotina de Invalidation para distribuição;</li>
+                            <li>Integração com Lambda Edge para acréscimo de funcionalidades;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon VPC<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e modificação de Amazon VPCs;</li>
+                            <li>Criação ou edição de subnets e tabela de roteamento;</li>
+                            <li>Criação ou alteração de regras em Network ACL;</li>
+                            <li>Criação ou alteração de regras em Network Security Group;</li>
+                            <li>Configuração de nat-gateway para saída de tráfego interno;</li>
+                            <li>Criar conexão Peering entre duas VPCs existentes;</li>
+                            <li>Criação de novo endpoint para serviço AWS existente;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon Direct Connect<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e configuração de Direct Connect;</li>
+                            <li>Alteração de rotas direcionadas para uso do Direct Connect;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Elastic Load Balancer<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e configuração de Load Balancer;</li>
+                            <li>Migração de tipos de Load Balancer previamento acordado;</li>
+                            <li>Configuração de certicado SSL em Load Balancers;</li>
+                            <li>Configuração e edição de Target Groups;</li>
+                            <li>Criação de Tags em recursos com vínculo ao Load Balancer;</li>
+                            <li>Atachar instâncias em Target Groups;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS VPN<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e modificação de configurações do AWS VPN com informações;</li>
+                            <li>Monitoramento dos peers de conexão;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Route 53<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de novos Domains Names;</li>
+                            <li>Criação e edição de entrada de DNS;</li>
+                            <li>Regra de failover baseado em métricas prontas;</li>
+                            <li>Alias de recursos AWS na criação de regras;</li>
+                            <li>Criação de Health Checks baseado em URL ou IP;</li>
+                            <li>Alteração de TTL para entradas já existentes;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS WAF<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e configuração de WAF tanto regionais como globais;</li>
+                            <li>Criação de regras default ou customizadas;</li>
+                            <li>Associação a distribuições</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon OpenSearch Service<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de OpenSearch em ambiente produtivo ou dev;</li>
+                            <li>Alteração de tamanho computacional e tamanho de disco;</li>
+                            <li>Controle de políticas de acessos via Roles e Policys;</li>
+                            <li>Modificação de version, engine, mediante a interrupção programada;</li>
+                            <li>Execução de backup não programado para OpenSearch;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon CloudWatch<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Monitoramento ativo de recursos da AWS;</li>
+                            <li>Configuração de métricas e threshoolds;</li>
+                            <li>Armazenamento de logs groups e métricas customizadas;</li>
+                            <li>Criação e customização de Dashboards;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>Amazon CloudTrail<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Configuração de armazenamento de logs;</li>
+                            <li>Ajuste no período de retenção;</li>
+                            <li>Configuração do CloudTrail Insights;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Backup<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de Planos de backup usando métricas default;</li>
+                            <li>Criação de Backup Vaults customizados mediante informações passadas;</li>
+                            <li>Modificação de tags para rotinas de backup;</li>
+                            <li>Criação de sincronização de backup entre contas da mesma Organization;</li>
+                            <li>Criação de sincronização de backup entre regiões;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Lifecycle Manager<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de rotina de backup para EC2 baseado em tags;</li>
+                            <li>Ajuste em período de retenção de backups;</li>
+                            <li>Personalização de Scheduled baseado em regra de negócio do cliente;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS SSO<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e configuração de SSO já dentro de alguma Organization;</li>
+                            <li>Criação de grupos e permissões;</li>
+                            <li>Criação e exclusão de usuários;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Organization<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e modificação de Organization baseado em informações do cliente;</li>
+                            <li>Inserção de novas contas;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Billing<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li style="text-decoration: underline;">Informações provisionadas pela ferramenta de FINOPS
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Cost Explorer<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li style="text-decoration: underline;">Informações provisionadas pela ferramenta de FINOPS
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Budgets<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li style="text-decoration: underline;">Informações provisionadas pela ferramenta de FINOPS
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS IAM<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de alteração de usuários, grupos, e políticas;</li>
+                            <li>Alteração de políticas customizadas;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Workspace<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e alteração de Workspaces;</li>
+                            <li>Atualização e criação de Bundles;</li>
+                            <li>Integração com AD conector com configurações previamente informadas;</li>
+                            <li>Criação de usuários e permissões;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS Secret Manager<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Armazenamento de informações em formato de Secret;</li>
+                            <li>Rotatividade de senhas e Secrets;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS EventBridge<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Configuração de eventos com configurações default;</li>
+                            <li>Configuração de eventos com configurações personalizadas;</li>
+                            <li>Habilitar ou desabilitar rules;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS SNS<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Configuração de notificações de SNS;</li>
+                            <li>Integração com outros recursos AWS;</li>
+                            <li>Criação ou edição de tópicos SNS;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS SES<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e modificação de serviços de email;</li>
+                            <li>Registro de domain e email para envio e recebimento; </li>
+                            <li>Integração com AD conector com configurações previamente informadas;</li>
+                            <li>Criação de usuários e permissões;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS SQS<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Configuração e alteração de filas SQS;</li>
+                            <li>Criação de filas FIFO ou Standard;</li>
+                            <li>Inserção de Tags nos recursos de fila;</li>
+                            <li>Controle de politicas previamente definidas;</li>
+                            <li>Trigger com Lambdas;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS CloudFormation<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Execução de staks de criação com informações pre definidas;</li>
+                            <li>Construção de templates.yml mediante informações do cliente;</li>
+                            <li>Construção de staks baseado em outras staks;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS System Manager<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Instalação de atualizações;</li>
+                            <li>Execuções de comandos;</li>
+                            <li>Armazenamento de Parameters Store;</li>
+                            <li>Configuração de demais serviços mediante a informações pré-definidas;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS CodeBuild<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação de buildspec.yml para build de imagem;</li>
+                            <li>Criação e alteração de recursos de CodeBuild;</li>
+                            <li>Evidenciamento de Logs e análise de erros;</li>
+                            <li>Criação de usuários e permissões;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS CodeCommit<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Arquivamento de código;</li>
+                            <li>Criação de branchs e repositórios;</li>
+                            <li>Criação de usuários e permissionamento;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section id="content-service-cmaas" class="container">
+        <div>
+            <strong>&nbsp;</strong>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>AWS CodePipeline<span class="marker"></span></summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Criação e alteração de esteira de pipeline;</li>
+                            <li>Criação de steps de aprovação;</li>
+                            <li>Clone de pipelines baseado em outros;</li>
+                            <li>Notificação ao cliente em steps de aprovação do pipeline;</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </section>
+
+</article>
